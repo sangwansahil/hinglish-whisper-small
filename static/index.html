@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hinglish STT</title>
+    <link rel="stylesheet" href="/static/style.css?v=1" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="topbar">
+        <div>
+          <h1>Hinglish STT</h1>
+          <p>Push-to-talk · local Whisper on your Mac</p>
+        </div>
+        <a class="admin-link" href="/admin">Admin</a>
+      </section>
+
+      <section class="recorder" id="recorder">
+        <button id="recordButton" class="record-button" type="button">
+          <span class="record-dot"></span>
+          Hold Space or Press
+        </button>
+        <div class="status" id="status">Loading model…</div>
+      </section>
+
+      <section class="takes" id="takes" aria-live="polite"></section>
+    </main>
+    <script src="/static/app.js?v=1" type="module"></script>
+  </body>
+</html>
